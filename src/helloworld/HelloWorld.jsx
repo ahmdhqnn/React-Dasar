@@ -1,24 +1,32 @@
 export default function HelloWorld() {
     return (
         <div>
-            <HeaderHelloWorld/>
-            <ParagraphHeloWorld/>
+            <HeaderHelloWorld />
+            <ParagraphHeloWorld />
         </div>
     )
 }
 
 function HeaderHelloWorld() {
+    const text = 'Hello World';
     return (
         <div>
-            <h1>Hello World</h1>
+            <h1 style={{ 
+                color: "red",
+                backgroundColor: "green"
+             }}>{text}</h1>
         </div>
     )
 }
 
 function ParagraphHeloWorld() {
+    const style = {
+        color: "blue",
+        backgroundColor: "red"
+    }
     return (
         <div>
-            <p>omaga gantengnya</p>
+            <p style={style}>omaga gantengnya</p>
         </div>
     )
 }
