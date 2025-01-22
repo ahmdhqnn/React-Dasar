@@ -1,3 +1,5 @@
+import './HelloWorld.css';
+
 export default function HelloWorld() {
     const props = {
         text: 'Hello World Spread Syntax'
@@ -12,19 +14,13 @@ export default function HelloWorld() {
 
 function HeaderHelloWorld({text = "ups lupa"}) {
     return (
-            <h1 style={{ 
-                color: "red",
-                backgroundColor: "green"
-             }}>{text}</h1>
+            <h1 className='title'>{text}</h1>
     )
 }
 
 function ParagraphHeloWorld() {
-    const style = {
-        color: "blue",
-        backgroundColor: "red"
-    }
+    const text = 'omaga gantengnya';
     return (
-            <p style={style}>omaga gantengnya</p>
+            <p className='content'>{text}</p>
     )
 }
