@@ -1,7 +1,10 @@
 export default function HelloWorld() {
+    const props = {
+        text: 'Hello World Spread Syntax'
+    }
     return (
         <div>
-            <HeaderHelloWorld text = 'Hello World' />
+            <HeaderHelloWorld {...props} />
             <ParagraphHeloWorld />
         </div>
     )
@@ -9,12 +12,10 @@ export default function HelloWorld() {
 
 function HeaderHelloWorld({text = "ups lupa"}) {
     return (
-        <div>
             <h1 style={{ 
                 color: "red",
                 backgroundColor: "green"
              }}>{text}</h1>
-        </div>
     )
 }
 
@@ -24,8 +25,6 @@ function ParagraphHeloWorld() {
         backgroundColor: "red"
     }
     return (
-        <div>
             <p style={style}>omaga gantengnya</p>
-        </div>
     )
 }
