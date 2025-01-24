@@ -34,7 +34,6 @@ export default function TodoList() {
     return (
         <ul>
             {data.map((todo) => (
-
                 <Todo key={todo.id} {...todo} />
             ))}
         </ul>

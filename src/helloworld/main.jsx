@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import HelloWorld from "./HelloWorld.jsx";
 import Container from "./Container.jsx";
 import TodoList from "../todo/TodoList.jsx";
+import Table from "../table/Table.jsx";
 
 
 createRoot(document.getElementById("root"))
@@ -11,6 +12,7 @@ createRoot(document.getElementById("root"))
             <Container>
                 <HelloWorld/>
                 <TodoList/>
+                <Table/>
             </Container>
         </StrictMode>
     );
