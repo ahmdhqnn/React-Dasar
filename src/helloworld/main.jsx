@@ -8,6 +8,7 @@ import AlertButton from "../button/AlertButton.jsx";
 import MyButton from "../button/MyButton.jsx";
 import ToolBar from "../button/Toolbar.jsx";
 import SearchForm from "../form/SearchForm.jsx";
+import SayHelloForm from "../form/SayHelloForm.jsx";
 
 
 createRoot(document.getElementById("root"))
@@ -20,12 +21,14 @@ createRoot(document.getElementById("root"))
                 <AlertButton text="click me" message="You click me" />
                 <MyButton text="Smash me" onSmash={() => alert("You smash me")} />
 
-                    <ToolBar onClick={(e) => {
-                        e.stopPropagation();
-                        alert("You click toolbar");
-                    }}/>
+                <ToolBar onClick={(e) => {
+                    e.stopPropagation();
+                    alert("You click toolbar");
+                }} />
 
-                    <SearchForm/>
+                <SearchForm />
+
+                <SayHelloForm />
             </Container>
         </StrictMode>
     );
