@@ -1,10 +1,12 @@
 import { useState } from "react"
 
+const initialData = {
+    name: "",
+    message: ""
+}
+
 export default function ContactForm() {
-    const [contact, setContact] = useState({
-        name: "",
-        message: ""
-    })
+    const [contact, setContact] = useState(initialData);
 
     function handleNameChanges(e) {
         setContact({ ...contact, name: e.target.value })
