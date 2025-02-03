@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function TaskForm(onSubmit) {
+export default function TaskForm({ onSubmit }) {
     const [item, setItem] = useState("");
 
     function handleNameChanges(e) {
