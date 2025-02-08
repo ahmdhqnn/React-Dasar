@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function Counter() {
+export default function Counter({name}) {
     const [count, setCount] = useState(0);
 
     function handleClick() {
@@ -10,7 +10,7 @@ export default function Counter() {
     return (
         <div>
             <h1>
-                Counter : {count}
+                Counter {name} : {count}
             </h1>
             <button onClick={handleClick}>Increment</button>
         </div>
